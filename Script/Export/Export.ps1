@@ -1,5 +1,5 @@
 $filename = $Env:ComputerName + ".json"
-$OutDir = "C:\Users\" + (Get-ChildItem Env:USERNAME).Value + "\Dropbox"
+$OutDir = "C:\Users\" + (Get-ChildItem Env:USERNAME).Value + "\OneDrive"
 New-Item -ItemType Directory -Force -Path $OutDir | Out-Null
 $path = Join-Path $OutDir $filename
 $awUrl = "http://localhost:5600/api/0/export"
